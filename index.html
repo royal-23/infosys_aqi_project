@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>AQI Predictor — Explainable</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    :root{
+      --bg:#ffffff; --muted:#6b7280; --accent:#2563eb; --card:#f8fafc;
+      --pill-bg:#eef6ff; --pill-border:#dbeafe;
+    }
+    body { font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:var(--bg); color:#0f172a; margin:0; padding:28px; }
+    .wrap{ max-width:980px; margin:0 auto; }
+    header{ display:flex; align-items:center; justify-content:space-between; margin-bottom:18px; }
+    h1{ font-size:20px; margin:0; }
+    small{ color:var(--muted); }
+
+    form { background:#ffffff; border:1px solid #e6eefc; padding:16px; border-radius:10px; box-shadow:0 6px 18px rgba(15,23,42,0.03); }
+    label{ display:block; margin-top:10px; font-weight:600; color:#0b1320; }
+    input[type="text"], textarea {
+      width:100%; padding:10px 12px; margin-top:6px; border-radius:8px; border:1px solid #e6eefc; font-size:14px;
+      background:#fff;
+    }
+    .row{ display:flex; gap:12px; flex-wrap:wrap; }
+    .col{ flex:1 1 220px; min-width:160px; }
+    .controls{ margin-top:14px; display:flex; gap:10px; align-items:center; }
+    button{ background:var(--accent); color:#fff; border:none; padding:10px 14px; border-radius:8px; cursor:pointer; font-weight:600; }
+    .card{ margin-top:18px; padding:16px; background:var(--card); border-radius:10px; border:1px solid #eef2ff; }
+    .prediction{ font-size:18px; font-weight:700; color:#064e3b; }
+    .feature-list{ display:flex; gap:8px; flex-wrap:wrap; margin-top:8px; }
+    .pill{ background:var(--pill-bg); border:1px solid var(--pill-border); color:#123; padding:6px 10px; border-radius:999px; font-weight:600; font-size:13px; }
+
+    /* Explanation styles (converted markdown HTML will be inserted here) */
+    .explain { margin-top:14px; }
+    .explain h1, .explain h2, .explain h3 { margin:8px 0; color:#0b3b5b; }
+    .explain p { margin:6px 0; line-height:1.55; color:#0b1730; }
+    .explain ul, .explain ol { margin:8px 0 12px 20px; color:#0b1730; }
+    .explain strong { color:#022c43; }
+    pre { background:#0f172a10; padding:12px; border-radius:8px; overflow:auto; }
+
+    footer{ margin-top:20px; color:var(--muted); font-size:13px; }
+    @media (max-width:640px){
+      .row{ flex-direction:column; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>AQI Predictor </h1>
+    </header>
+
+    <form method="post" action="/predict" autocomplete="off">
+      <div class="row">
+        <div class="col">
+          <label for="co">CO </label>
+          <input id="co" name="co" type="text" value="{{ values.CO if values else '0.6' }}" />
+        </div>
+
+        <div class="col">
+          <label for="no2">NO2 </label>
+          <input id="no2" name="no2" type="text" value="{{ values.NO2 if values else '40' }}" />
+        </div>
+
+        <div class="col">
+          <label for="pt08">PT08S1 </label>
+          <input id="pt08" name="pt08" type="text" value="{{ values.PT08S1 if values else '650' }}" />
+        </div>
+
+        <div class="col">
+          <label for="temperature">Temperature </label>
+          <input id="temperature" name="temperature" type="text" value="{{ values.Temperature if values else '15' }}" />
+        </div>
+
+        <div class="col">
+          <label for="relative_humidity">Relative Humidity </label>
+          <input id="relative_humidity" name="relative_humidity" type="text" value="{{ values['Relative Humidity'] if values else '40' }}" />
+        </div>
+
+        <div class="col">
+          <label for="absolute_humidity">Absolute Humidity</label>
+          <input id="absolute_humidity" name="absolute_humidity" type="text" value="{{ values['Absolute Humidity'] if values else '0.5' }}" />
+        </div>
+      </div>
+
+      <div class="controls">
+        <button type="submit">Predict + Explain</button>
+        <div style="margin-left:8px;color:var(--muted)"></div>
+      </div>
+    </form>
+
+    {% if prediction %}
+      <div class="card">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <div>
+            <div class="prediction">Prediction: {{ prediction }}</div>
+            <div class="feature-list" aria-hidden="true">
+              <span class="pill">CO: {{ values.CO if values else '' }}</span>
+              <span class="pill">NO2: {{ values.NO2 if values else '' }}</span>
+              <span class="pill">PT08S1: {{ values.PT08S1 if values else '' }}</span>
+              <span class="pill">Temp: {{ values.Temperature if values else '' }}°C</span>
+              <span class="pill">RH: {{ values['Relative Humidity'] if values else '' }}%</span>
+              <span class="pill">AH: {{ values['Absolute Humidity'] if values else '' }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+
+    {% if explanation_html %}
+      <div class="card explain">
+        <h3>Explanation (generated by Gemini)</h3>
+        <div class="explain" id="explanation-area">
+          {{ explanation_html | safe }}
+        </div>
+      </div>
+    {% elif explanation %}
+      <!-- fallback: raw explanation text -->
+      <div class="card explain">
+        <h3>Explanation (raw)</h3>
+        <pre>{{ explanation }}</pre>
+      </div>
+    {% endif %}
+
+  </div>
+</body>
+</html>
