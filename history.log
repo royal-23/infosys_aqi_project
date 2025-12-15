@@ -1,0 +1,223 @@
+PROMPT_FEATURES: {'CO': 0.6, 'NO2': 40.0, 'PT08S1': 650.0, 'Temperature': 15.0, 'Relative Humidity': 40.0, 'Absolute Humidity': 0.5}
+PREDICTION: Good
+EXPLANATION: Error calling Gemini: Models.generate_content() got an unexpected keyword argument 'max_output_tokens'
+
+PROMPT_FEATURES: {'CO': 0.6, 'NO2': 40.0, 'PT08S1': 650.0, 'Temperature': 15.0, 'Relative Humidity': 40.0, 'Absolute Humidity': 0.5}
+PREDICTION: Good
+EXPLANATION: The AQI classification model predicted "Good" air quality because all the measured factors are at levels typically associated with clean and healthy air.
+
+Here's a step-by-step breakdown:
+
+*   **CO (Carbon Monoxide): 0.6**
+    *   **Influence:** Carbon monoxide is a harmful gas, especially at high levels, affecting breathing and heart health.
+    *   **Why "Good":** The CO level of 0.6 is very low, meaning there's hardly any of this pollutant in the air. This is excellent for air quality.
+
+*   **NO2 (Nitrogen Dioxide): 40.0**
+    *   **Influence:** Nitrogen dioxide is a gas that can irritate the lungs and contribute to respiratory problems.
+    *   **Why "Good":** The NO2 level of 40.0 is also quite low. This indicates minimal pollution from sources like vehicle exhaust or power plants.
+
+*   **PT08S1 (Tin Dioxide Sensor): 650.0**
+    *   **Influence:** This sensor helps detect certain pollutants like carbon monoxide and other volatile organic compounds (VOCs). Higher readings can sometimes mean more pollution.
+    *   **Why "Good":** The sensor reading of 650.0 is at a level that suggests low amounts of these specific pollutants in the air.
+
+*   **Temperature: 15.0**
+    *   **Influence:** Temperature isn't a pollutant itself, but extreme heat or cold can sometimes affect how pollutants form and spread.
+    *   **Why "Good":** A mild temperature of 15.0 degrees Celsius is generally neutral and doesn't promote poor air quality.
+
+*   **Relative Humidity: 40.0%**
+    *   **Influence:** Humidity can influence how certain pollutants form or how easily dust travels.
+    *   **Why "Good":** A relative humidity of 40.0% is a comfortable and moderate level, which is generally not a factor that would worsen air quality.
+
+*   **Absolute Humidity: 0.5**
+    *   **Influence:** Absolute humidity measures the actual amount of water vapor in the air, which can also play a role in pollutant chemistry.
+    *   **Why "Good":** The absolute humidity of 0.5 is low, meaning there isn't a lot of water vapor to significantly contribute to pollutant formation or reactions.
+
+**Overall Conclusion:** All the pollutant levels (CO, NO2, and PT08S1 sensor reading) are very low, while the environmental conditions (temperature, relative and absolute humidity) are mild and favorable. Together, these factors strongly support the "Good" air quality prediction.
+
+PROMPT_FEATURES: {'CO': 0.6, 'NO2': 40.0, 'PT08S1': 650.0, 'Temperature': 15.0, 'Relative Humidity': 40.0, 'Absolute Humidity': 0.5}
+PREDICTION: Good
+EXPLANATION: Here's a step-by-step explanation of how these features influence air quality, suitable for a school report:
+
+1.  **How each feature influences air quality:**
+    *   **CO (Carbon Monoxide):** Low levels of carbon monoxide mean less harmful gas in the air, making it safer to breathe.
+    *   **NO2 (Nitrogen Dioxide):** Low levels of nitrogen dioxide indicate less pollution, often from vehicles, which is good for air quality.
+    *   **PT08S1 (Sensor reading for certain gases):** A lower reading from this sensor means fewer specific harmful gases are detected in the air.
+    *   **Temperature:** The air temperature affects how pollutants can form or spread throughout the environment.
+    *   **Relative Humidity:** How much moisture is in the air (relative humidity) influences how other pollutants behave and interact.
+    *   **Absolute Humidity:** The total amount of water vapor in the air (absolute humidity) also plays a part in the overall air quality.
+
+2.  **Overall Conclusion:**
+    Based on these readings, where key pollutants were at low levels and environmental conditions were suitable, the air quality was predicted to be Good. This means the air is healthy for most people to breathe and enjoy outdoor activities.
+
+PROMPT_FEATURES: {'CO': 0.6, 'NO2': 40.0, 'PT08S1': 650.0, 'Temperature': 15.0, 'Relative Humidity': 40.0, 'Absolute Humidity': 0.5}
+PREDICTION: Good
+EXPLANATION: Here is a step-by-step explanation for your school report:
+
+**1) How each feature influences air quality:**
+
+*   **CO (Carbon Monoxide):** Carbon Monoxide is a harmful gas, so lower levels of it generally mean healthier, cleaner air.
+*   **NO2 (Nitrogen Dioxide):** Nitrogen Dioxide is another pollutant that can harm breathing, so having lower amounts of it helps contribute to good air quality.
+*   **PT08S1:** This sensor helps detect certain air pollutants; typically, lower readings from this sensor suggest fewer harmful substances in the air.
+*   **Temperature:** Air temperature can influence how pollutants form or how quickly they spread out, affecting overall air cleanliness.
+*   **Relative Humidity:** The amount of moisture in the air (Relative Humidity) can impact how pollutants react and how easily they can be dispersed or trapped.
+*   **Absolute Humidity:** Absolute Humidity, which measures the actual amount of water vapor, also plays a role in the chemical reactions and movement of air pollutants.
+
+**2) Overall Conclusion:**
+
+Based on these measurements, the levels of key harmful pollutants like Carbon Monoxide and Nitrogen Dioxide are low. The temperature and humidity are also at levels that do not seem to be trapping or increasing pollution, all contributing to the prediction of "Good" air quality.
+
+PROMPT_FEATURES: {'CO': 0.6, 'NO2': 40.0, 'PT08S1': 650.0, 'Temperature': 15.0, 'Relative Humidity': 40.0, 'Absolute Humidity': 0.5}
+PREDICTION: Good
+EXPLANATION: Here's a step-by-step explanation for your school report:
+
+Here's how each factor influences the air quality prediction:
+
+*   **CO (Carbon Monoxide):** Carbon monoxide is a harmful gas that, at high levels, can make the air unhealthy to breathe.
+*   **NO2 (Nitrogen Dioxide):** Nitrogen dioxide is a pollutant often from cars, and too much of it can irritate our lungs and contribute to smog.
+*   **PT08S1:** This sensor measures certain gases in the air that can be harmful if they are present in high amounts.
+*   **Temperature:** Air temperature can affect how other pollutants form and spread in the air.
+*   **Relative Humidity:** How much moisture is in the air (relative humidity) can influence how pollutants behave and stay in the air.
+*   **Absolute Humidity:** The actual amount of water vapor in the air (absolute humidity) also plays a role in how pollutants react and are cleared away.
+
+**Overall Conclusion:**
+By looking at all these different measurements, the model determined that the levels of pollutants are low and the environmental conditions are favorable, leading to a prediction of "Good" air quality. This means the air is clean and safe to breathe today.
+
+FEATURES: {'CO': 0.6, 'NO2': 40.0, 'PT08S1': 650.0, 'Temperature': 15.0, 'Relative Humidity': 40.0, 'Absolute Humidity': 0.5}
+PREDICTION: Good
+EXPLANATION: Here's a step-by-step explanation:
+
+*   **CO (Carbon Monoxide):** Carbon Monoxide is a harmful gas; low levels mean the air is cleaner and safer to breathe.
+*   **NO2 (Nitrogen Dioxide):** Nitrogen Dioxide is a pollutant often from cars and burning fuels; low levels mean better air quality.
+*   **PT08S1 (Tin Oxide Sensor):** This sensor helps detect certain gases, and its reading here supports the finding of low pollutant levels.
+*   **Temperature:** Temperature can affect how pollutants form and spread in the air, influencing overall air quality.
+*   **Relative Humidity:** Humidity levels can impact how pollutants react and linger in the air, affecting its quality.
+*   **Absolute Humidity:** This measures the actual water vapor in the air, which can also influence how pollutants behave and disperse.
+
+**Overall Conclusion:**
+Based on these measurements, especially the low levels of key pollutants like Carbon Monoxide and Nitrogen Dioxide, the air quality is predicted to be "Good." This means the air is clean and healthy to breathe.
+
+FEATURES: {'CO': 1.2, 'NO2': 120.0, 'PT08S1': 720.0, 'Temperature': 22.0, 'Relative Humidity': 60.0, 'Absolute Humidity': 0.9}
+PREDICTION: Poor
+EXPLANATION: Here's a step-by-step explanation of how the features influence air quality, leading to a "Poor" prediction:
+
+*   **CO (Carbon Monoxide): 1.2**
+    Carbon Monoxide (CO) is a harmful gas; higher levels make the air quality worse as it affects breathing.
+*   **NO2 (Nitrogen Dioxide): 120.0**
+    Nitrogen Dioxide (NO2) is a pollutant often from cars and industries; higher amounts can irritate lungs and contribute to poor air quality.
+*   **PT08S1: 720.0**
+    The PT08S1 sensor detects certain pollutants in the air; a higher reading suggests more harmful substances are present.
+*   **Temperature: 22.0**
+    Temperature can affect how chemical pollutants are formed and how they spread or get trapped in the air, influencing overall air quality.
+*   **Relative Humidity: 60.0**
+    Relative Humidity (the amount of moisture in the air) can influence how pollutants react and form new particles, sometimes contributing to haze and poorer air.
+*   **Absolute Humidity: 0.9**
+    Absolute Humidity (the total amount of water vapor) also plays a role in atmospheric chemistry, affecting how pollutants behave and their impact on air quality.
+
+**Overall Conclusion:**
+Combining these factors, the model assessed that the levels of harmful gases and specific weather conditions make the air quality "Poor." This indicates that the air is unhealthy for many people, especially those with breathing problems.
+
+FEATURES: {'CO': 0.6, 'NO2': 40.0, 'PT08S1': 650.0, 'Temperature': 15.0, 'Relative Humidity': 40.0, 'Absolute Humidity': 0.5}
+PREDICTION: Good
+EXPLANATION: Here's an explanation of why the air quality was predicted as "Good":
+
+**How each factor influenced the air quality:**
+
+*   **CO (Carbon Monoxide):** The very low level of carbon monoxide indicates minimal pollution from sources like cars and industrial activities, which is excellent for air quality.
+*   **NO2 (Nitrogen Dioxide):** A moderate level of nitrogen dioxide suggests that emissions from vehicles and power plants are not too high, helping to keep the air clean.
+*   **PT08S1 (Sensor Reading):** This sensor reading is at a moderate level, meaning there aren't many harmful gases or volatile organic compounds detected in the air.
+*   **Temperature:** A mild temperature helps prevent pollutants from forming or getting trapped in the air, supporting good air quality.
+*   **Relative Humidity:** The moderate humidity helps keep the air clear by not allowing pollutants to gather or react negatively.
+*   **Absolute Humidity:** A low absolute humidity means there isn't much moisture in the air that could potentially worsen air quality by trapping pollutants.
+
+**Overall Conclusion:**
+All these factors combined show that pollution levels are low, and environmental conditions are favorable. This leads to the prediction of "Good" air quality, meaning the air is clean and safe for everyone to breathe.
+
+FEATURES: {'CO': 0.6, 'NO2': 40.0, 'PT08S1': 650.0, 'Temperature': 15.0, 'Relative Humidity': 40.0, 'Absolute Humidity': 0.5}
+PREDICTION: Good
+EXPLANATION: Here's a step-by-step explanation of the AQI prediction:
+
+*   **CO (Carbon Monoxide):** Carbon Monoxide is a harmful gas, and its very low level (0.6) significantly contributes to the air being clean.
+*   **NO2 (Nitrogen Dioxide):** Nitrogen Dioxide is a gas often produced by traffic; its level (40.0) is within a healthy range, supporting good air quality.
+*   **PT08S1:** This sensor helps detect specific pollutants; its current reading (650.0) indicates low levels of these substances, contributing to the overall good air quality.
+*   **Temperature:** A mild temperature of 15 degrees Celsius is generally favorable, as it doesn't promote the formation of certain pollutants as much as very hot weather might.
+*   **Relative Humidity:** A moderate Relative Humidity of 40% is suitable for good air quality, as it affects how pollutants behave and disperse in the atmosphere.
+*   **Absolute Humidity:** The low Absolute Humidity of 0.5 means there's less water vapor in the air, which can help keep the air clear and reduce the formation of certain fine particles.
+
+**Overall Conclusion:**
+The combination of very low or healthy levels of key pollutants (like Carbon Monoxide and Nitrogen Dioxide) along with favorable weather conditions (moderate temperature and humidity) all contribute to the predicted "Good" air quality. This means the air is clean and safe for everyone to breathe.
+
+FEATURES: {'CO': 0.6, 'NO2': 40.0, 'PT08S1': 650.0, 'Temperature': 15.0, 'Relative Humidity': 40.0, 'Absolute Humidity': 0.5}
+PREDICTION: Good
+EXPLANATION: Here's a step-by-step explanation for your school report:
+
+**Explanation of AQI Prediction: Good**
+
+Here's how different factors influence air quality, leading to a "Good" prediction:
+
+1.  **How each feature influences air quality:**
+    *   **CO (Carbon Monoxide):** This gas is harmful to breathe, so lower levels mean healthier air.
+    *   **NO2 (Nitrogen Dioxide):** This pollutant, often from traffic, can irritate the lungs, so low amounts are good for air quality.
+    *   **PT08S1:** This sensor measures various harmful gases in the air; lower readings generally mean fewer pollutants are present.
+    *   **Temperature:** Air temperature can influence how pollutants are formed and how they spread, sometimes making pollution worse on very hot days.
+    *   **Relative Humidity:** The amount of moisture in the air (relative humidity) affects how tiny particles and gases in the air behave.
+    *   **Absolute Humidity:** This refers to the actual amount of water vapor in the air, which can also affect chemical reactions involving pollutants.
+
+2.  **Overall Conclusion:**
+    *   Based on these readings, the levels of key pollutants like Carbon Monoxide and Nitrogen Dioxide are low. The environmental conditions, including temperature and humidity, are also favorable.
+    *   Together, these factors indicate that the air quality is currently healthy and good for outdoor activities.
+
+FEATURES: {'CO': 0.6, 'NO2': 40.0, 'PT08S1': 650.0, 'Temperature': 15.0, 'Relative Humidity': 40.0, 'Absolute Humidity': 0.5}
+PREDICTION: Good
+EXPLANATION: Here's a step-by-step explanation of the air quality prediction:
+
+Here's how each feature contributes to the "Good" air quality prediction:
+
+*   **CO (Carbon Monoxide):** Carbon monoxide is a harmful gas, and a low level like 0.6 means the air is cleaner.
+*   **NO2 (Nitrogen Dioxide):** Nitrogen dioxide is a pollutant often from vehicles, and a level of 40.0 helps keep the air quality good.
+*   **PT08S1:** This sensor measures certain pollutants in the air, and its reading helps confirm good air conditions.
+*   **Temperature:** The air temperature can affect how pollutants form and spread in the atmosphere.
+*   **Relative Humidity:** This measures the moisture in the air, which can influence how air pollution behaves.
+*   **Absolute Humidity:** This is another way to measure water vapor in the air, and it also plays a role in air quality.
+
+**Overall Conclusion:**
+Based on these readings, where key pollutants are at low or moderate levels and environmental conditions are not contributing to high pollution, the air quality is predicted to be Good. This means the air is healthy for breathing.
+
+FEATURES: {'CO': 0.6, 'NO2': 40.0, 'PT08S1': 650.0, 'Temperature': 15.0, 'Relative Humidity': 40.0, 'Absolute Humidity': 0.5}
+PREDICTION: Good
+EXPLANATION: Here's a step-by-step explanation of the AQI prediction:
+
+1.  **How Each Feature Influences Air Quality:**
+    *   **CO (Carbon Monoxide):** Carbon Monoxide is a harmful gas, so its very low level here means the air is safer to breathe.
+    *   **NO2 (Nitrogen Dioxide):** Nitrogen Dioxide is a pollutant that can harm our lungs, and its low amount helps keep the air healthy.
+    *   **PT08S1:** This sensor measures certain types of air pollutants, and its reading suggests there are not many of these harmful substances in the air.
+    *   **Temperature:** The temperature can affect how other pollutants form or spread in the air.
+    *   **Relative Humidity:** This measures moisture in the air, which can influence how pollutants develop or clear away.
+    *   **Absolute Humidity:** The actual amount of water vapor in the air, also plays a role in how pollutants behave.
+
+2.  **Overall Conclusion:**
+    The air quality is predicted as "Good" primarily because the levels of harmful gases like Carbon Monoxide and Nitrogen Dioxide are very low. This means the air is clean and healthy for everyone.
+
+FEATURES: {'CO': 0.6, 'NO2': 40.0, 'PT08S1': 650.0, 'Temperature': 15.0, 'Relative Humidity': 40.0, 'Absolute Humidity': 0.5}
+PREDICTION: Good
+EXPLANATION: Here's a step-by-step explanation of the AQI prediction:
+
+**Explanation of Good Air Quality**
+
+Based on the provided readings, the air quality is predicted to be Good because:
+
+*   **CO (Carbon Monoxide): 0.6**
+    Low levels of Carbon Monoxide like 0.6 mean the air is cleaner and safer to breathe.
+*   **NO2 (Nitrogen Dioxide): 40.0**
+    Lower levels of Nitrogen Dioxide, a pollutant often from cars, indicate cleaner air.
+*   **PT08S1 (Sensor reading for pollutants): 650.0**
+    This sensor helps detect certain air pollutants like fumes; its value of 650 suggests these pollutants are at low levels.
+*   **Temperature: 15.0**
+    A mild temperature of 15.0 degrees Celsius is not a factor that would worsen air quality.
+*   **Relative Humidity: 40.0**
+    A moderate Relative Humidity of 40.0 percent helps keep the air clear by not trapping pollutants.
+*   **Absolute Humidity: 0.5**
+    A low Absolute Humidity of 0.5 means there's less water vapor, which can help prevent pollutant buildup.
+
+**Overall Conclusion:**
+All these factors, especially the low levels of pollutants, contribute to a positive outlook. This combination of low pollutants and favorable environmental conditions means the air quality is considered Good.
+
